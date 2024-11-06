@@ -2,7 +2,7 @@
 import { CryptoHasher, write, file } from "bun";
 import { randomBytes } from "node:crypto";
 import { promises as fr, existsSync, mkdirSync } from "node:fs";
-import { Brioche, PGCache, is } from "./index";
+import { Bunned, PGCache, is } from "./index";
 import { sign, verify } from "jsonwebtoken";
 import { Client } from "pg";
 
@@ -471,9 +471,9 @@ class postgreSQL extends serverInterface {
 export class reSession {
   config: sessionConfig;
   secret: string;
-  app: InstanceType<typeof Brioche>;
+  app: InstanceType<typeof Bunned>;
   constructor(
-    app: InstanceType<typeof Brioche>,
+    app: InstanceType<typeof Bunned>,
     config: sessionConfig | obj<any>,
     secret: string,
   ) {

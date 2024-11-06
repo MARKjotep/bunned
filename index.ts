@@ -369,7 +369,7 @@ export const { session, auth_bearer, jwt, jwt_refresh, wss } = (function () {
   return { session, auth_bearer: jwt, jwt, jwt_refresh, wss };
 })();
 
-export const { Brioche, response, fsyt } = (function () {
+export const { Bunned, response, fsyt } = (function () {
   //
 
   class _r {
@@ -617,7 +617,7 @@ export const { Brioche, response, fsyt } = (function () {
     set type(content: string) {
       this.header = { "Content-Type": content };
     }
-    async __reqs(app: Brioche, req: request) {
+    async __reqs(app: Bunned, req: request) {
       let sid = "";
       let jwtv = "";
       let refreshjwt: any | null = null;
@@ -713,7 +713,7 @@ export const { Brioche, response, fsyt } = (function () {
     }
     async response(
       req: request,
-      app: Brioche,
+      app: Bunned,
     ): Promise<string | void | Response> {
       const { method } = req;
       if (this.Furl) {
@@ -1035,7 +1035,7 @@ export const { Brioche, response, fsyt } = (function () {
     };
   }
 
-  class Brioche extends _B {
+  class Bunned extends _B {
     _jwt: _jwt;
     constructor(dir: string, env_path?: string) {
       super(dir, env_path);
@@ -1166,7 +1166,7 @@ export const { Brioche, response, fsyt } = (function () {
     }
   }
 
-  return { Brioche, response, fsyt };
+  return { Bunned, response, fsyt };
 })();
 
 // Single query --
