@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "outDir": "../../dist/brioche",
+    "rootDir": "./",
+    "baseUrl": "./",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "allowJs": true,
+    "strict": true,
+    "noImplicitThis": false,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "composite": true
+    // "declaration": false
+  }
+}

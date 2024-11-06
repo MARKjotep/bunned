@@ -1,0 +1,16 @@
+{
+  "name": "brioche",
+  "version": "1.0.0",
+  "description": "brioche",
+  "scripts": {},
+  "author": "Marky <markjotep@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.18.0",
+    "jsonwebtoken": "^9.0.2",
+    "mime-types": "^2.1.35",
+    "dotenv": "^16.4.5",
+    "supabase": "^1.190.0",
+    "pg": "^8.12.0"
+  }
+}
