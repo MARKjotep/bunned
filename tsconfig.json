@@ -4,7 +4,7 @@
     "target": "ESNext",
     "module": "ESNext",
     "lib": ["ESNext", "DOM"],
-    "outDir": "../../dist/brioche",
+    "outDir": "../../dist/bunned",
     "rootDir": "./",
     "baseUrl": "./",
     "noImplicitAny": true,
